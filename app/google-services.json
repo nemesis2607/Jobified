@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "967825234995",
+    "project_id": "vendorvalley-13b90",
+    "storage_bucket": "vendorvalley-13b90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967825234995:android:470f789a5aa1e23c9a9746",
+        "android_client_info": {
+          "package_name": "com.example.jobified"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBy4h-eLBQKaP7jFBskn5wJa3bm2Zea3MY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
