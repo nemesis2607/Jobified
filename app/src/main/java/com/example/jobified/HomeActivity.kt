@@ -14,7 +14,7 @@ import com.google.firebase.database.FirebaseDatabase
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var adapter: CandidateAdapter
-    private var doubleBackToExitPressedOnce = false
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,15 +44,5 @@ class HomeActivity : AppCompatActivity() {
         adapter.startListening()
     }
 
-    override fun onBackPressed() {
-        if (doubleBackToExitPressedOnce) {
-            super.onBackPressed()
-            return
-        }
 
-        this.doubleBackToExitPressedOnce = true
-        Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT).show()
-
-        Handler().postDelayed({ doubleBackToExitPressedOnce = false }, 2000)
-    }
 }

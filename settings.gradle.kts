@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Vendorvalley"
+rootProject.name = "Jobified"
 include(":app")
  

@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Splashscreen"
+    tools:context=".SplashActivity"
     android:orientation="vertical"
     android:background="@color/primary"
     android:layout_gravity="center"
     android:gravity="center">
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/jobifiedlogo"/>

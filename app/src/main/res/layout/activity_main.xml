@@ -4,27 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@color/primary"
-    android:layout_gravity="center"
-    android:gravity="center">
+    tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/jobifiedlogo"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:paddingHorizontal="12dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:elevation="4dp"
+            android:fontFamily="@font/gentium_basic_bold"
+            android:text="Jobified"
+            android:textColor="@color/primary"
+            android:textSize="24dp" />
+
+        <ImageView
+            android:id="@+id/menubtn"
+            android:layout_width="40dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu" />
+
+    </RelativeLayout>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_marginTop="12dp"
         android:layout_height="wrap_content"
+        android:text="Activities"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/gentium_basic_bold"
-        android:text="VendorValley"
-        android:textAlignment="center"
-        android:textSize="32dp"
-        android:textColor="@color/white"/>
+        android:layout_marginHorizontal="12dp"
+        android:textSize="28dp"/>
 
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="8dp"/>
 
 
 </LinearLayout>

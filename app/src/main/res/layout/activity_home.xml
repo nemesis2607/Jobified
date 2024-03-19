@@ -23,7 +23,7 @@
             android:layout_centerVertical="true"
             android:elevation="4dp"
             android:fontFamily="@font/gentium_basic_bold"
-            android:text="Jobified"
+            android:text="Candidates"
             android:textColor="@color/primary"
             android:textSize="24dp" />
 

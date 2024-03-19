@@ -51,7 +51,7 @@ class CandidateAdapter(options: FirebaseRecyclerOptions<Candidate>) :
 
         holder.itemView.setOnClickListener {
             // Create an intent to start DetailActivity
-            val intent = Intent(it.context, DetailsActivity::class.java)
+            val intent = Intent(it.context, CandidateActivity::class.java)
 
             // Pass the selected product to DetailActivity
             intent.putExtra("PRODUCT", pModel)

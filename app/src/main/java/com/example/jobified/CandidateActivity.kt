@@ -11,7 +11,7 @@ import com.bumptech.glide.Glide
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 
-class DetailsActivity : AppCompatActivity() {
+class CandidateActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details)
@@ -32,7 +32,7 @@ class DetailsActivity : AppCompatActivity() {
         val storRef: StorageReference = FirebaseStorage.getInstance().getReferenceFromUrl("${product?.imageUrl}")
 
         Log.d("Glide", "Loading image with URL: ${product?.imageUrl}")
-        Glide.with(this@DetailsActivity).load(storRef).into(image)
+        Glide.with(this@CandidateActivity).load(storRef).into(image)
 
         // Set the values based on the product object
         name.text = product?.name

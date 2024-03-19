@@ -22,7 +22,7 @@ class LoginActivity : AppCompatActivity() {
         val currentUser = firebaseAuth.currentUser
         if (currentUser != null) {
             startActivity(
-                Intent(this, HomeActivity::class.java)
+                Intent(this, MainActivity::class.java)
                     .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             )
             finish()
@@ -41,7 +41,7 @@ class LoginActivity : AppCompatActivity() {
                 firebaseAuth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener {
                         if (it.isSuccessful) {
-                            val intent = Intent(this, MainActivity::class.java)
+                            val intent = Intent(this, SplashActivity::class.java)
                             startActivity(intent)
                         } else {
                             Toast.makeText(

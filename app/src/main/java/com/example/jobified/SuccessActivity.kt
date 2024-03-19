@@ -13,7 +13,7 @@ class SuccessActivity : AppCompatActivity() {
         val goback: Button= findViewById(R.id.goback)
 
         goback.setOnClickListener{
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
 
         }
